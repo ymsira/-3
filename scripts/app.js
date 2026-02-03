@@ -1,10 +1,10 @@
 /* ============================================================
-   VALENTINE — App core · Navegación + localStorage
+   <3 — App core · Navegación + localStorage
    ============================================================ */
 
 /* ── Global storage helper (disponible para todos los scripts) ── */
 var Storage = {
-    PREFIX: 'valentine_',
+    PREFIX: '<3_',
     get: function (key) {
         try {
             var v = localStorage.getItem(this.PREFIX + key);

@@ -1,5 +1,5 @@
 /* ============================================================
-   VALENTINE — Questions · Conversaciones Profundas
+   <3 — Questions · Conversaciones Profundas
    205 preguntas en 5 categorías + lógica de baraja
    ============================================================ */
 

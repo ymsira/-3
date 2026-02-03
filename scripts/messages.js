@@ -1,5 +1,5 @@
 /* ============================================================
-   VALENTINE — Messages · Mensajes del Futuro
+   <3 — Messages · Mensajes del Futuro
    Fechas especiales + "Cuando pase" con unlock por fecha
    ============================================================ */
 
