@@ -1,0 +1,18 @@
+{
+  "categories": [
+    { "key": "romantic",      "label": "Románticas",     "emoji": "🧡", "count": 40 },
+    { "key": "deep",          "label": "Profundas",      "emoji": "🤔", "count": 50 },
+    { "key": "fun",           "label": "Divertidas",     "emoji": "😊", "count": 40 },
+    { "key": "future",        "label": "Futuro",         "emoji": "🔮", "count": 40 },
+    { "key": "vulnerability", "label": "Vulnerabilidad", "emoji": "💭", "count": 35 }
+  ],
+  "total": 205,
+  "note": "Las 205 preguntas completas están inlineadas en scripts/questions.js para que la app funcione sin servidor. Este archivo sirve como referencia de estructura.",
+  "sample": [
+    { "id": 1,   "cat": "romantic",      "text": "¿Cuál es tu recuerdo favorito conmigo?" },
+    { "id": 41,  "cat": "deep",          "text": "¿Qué te hace sentir más amado/a?" },
+    { "id": 91,  "cat": "fun",           "text": "¿Cuál es mi manía más rara que secretamente adoras?" },
+    { "id": 131, "cat": "future",        "text": "¿Qué sueño compartido quieres cumplir primero?" },
+    { "id": 171, "cat": "vulnerability", "text": "¿Cuándo te has sentido más orgulloso/a de nosotros?" }
+  ]
+}

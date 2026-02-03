@@ -1,0 +1,168 @@
+/* ============================================================
+   VALENTINE — Estilos principales & compartidos
+   ============================================================ */
+
+/* ── Reset ── */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.25;
+}
+img { max-width: 100%; display: block; }
+button { font-family: inherit; }
+
+/* ── NAV ── */
+.main-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 58px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.nav-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #DC143C;
+    white-space: nowrap;
+}
+.nav-tabs { display: flex; gap: 0.2rem; }
+.nav-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.42rem 0.8rem;
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #666;
+    transition: background 0.22s, color 0.22s;
+    white-space: nowrap;
+}
+.nav-tab:hover        { background: rgba(220,20,60,.07); color: #DC143C; }
+.nav-tab.active       { background: rgba(220,20,60,.11); color: #DC143C; font-weight: 600; }
+.tab-icon             { font-size: 0.95rem; }
+
+@media (max-width: 480px) {
+    .tab-label  { display: none; }
+    .tab-icon   { font-size: 1.15rem; }
+    .nav-tab    { padding: 0.42rem 0.6rem; }
+    .nav-logo   { font-size: 1.05rem; }
+}
+
+/* ── SECTIONS ── */
+.section {
+    min-height: calc(100vh - 58px);
+    padding-top: 58px;
+    display: none;
+}
+.section.active {
+    display: block;
+    animation: sectionIn 0.38s ease both;
+}
+@keyframes sectionIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.subtitle {
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* ── MODAL (base) ── */
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+.modal-bg.open          { opacity: 1; pointer-events: auto; }
+.modal-box {
+    background: #fff;
+    border-radius: 24px;
+    max-width: 540px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 28px 60px rgba(0,0,0,.28);
+    transform: scale(0.91) translateY(20px);
+    transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
+}
+.modal-bg.open .modal-box { transform: scale(1) translateY(0); }
+
+.modal-close {
+    position: absolute;
+    top: 0.85rem; right: 0.85rem;
+    z-index: 5;
+    width: 34px; height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,.06);
+    color: #555;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.modal-close:hover { background: rgba(0,0,0,.13); }
+
+/* Dark modal (mensajes) */
+.dark-modal {
+    background: linear-gradient(160deg, #16163a, #0f0f2a);
+    box-shadow: 0 28px 70px rgba(0,0,0,.5);
+}
+.dark-modal .modal-close {
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.7);
+}
+.dark-modal .modal-close:hover { background: rgba(255,255,255,.2); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar            { width: 5px; }
+::-webkit-scrollbar-track      { background: transparent; }
+::-webkit-scrollbar-thumb      { background: rgba(0,0,0,.14); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover{ background: rgba(0,0,0,.24); }

@@ -1,0 +1,33 @@
+{
+  "special": [
+    { "id": "ann_2026",  "date": "2026-02-04", "title": "6º Aniversario",          "emoji": "💝" },
+    { "id": "ann_2027",  "date": "2027-02-04", "title": "7º Aniversario",          "emoji": "💝" },
+    { "id": "ann_2028",  "date": "2028-02-04", "title": "8º Aniversario",          "emoji": "💝" },
+    { "id": "ann_2029",  "date": "2029-02-04", "title": "9º Aniversario",          "emoji": "💝" },
+    { "id": "ann_2030",  "date": "2030-02-04", "title": "10º Aniversario",         "emoji": "💝" },
+    { "id": "casa_2026", "date": "2026-07-04", "title": "1 año en nuestra casita", "emoji": "🏠" },
+    { "id": "casa_2027", "date": "2027-07-04", "title": "2 años en nuestra casita","emoji": "🏠" },
+    { "id": "casa_2028", "date": "2028-07-04", "title": "3 años en nuestra casita","emoji": "🏠" },
+    { "id": "bday_2026", "date": "2026-09-27", "title": "Cumpleaños Nacho 2026",   "emoji": "🎂" },
+    { "id": "bday_2027", "date": "2027-09-27", "title": "Cumpleaños Nacho 2027",   "emoji": "🎂" },
+    { "id": "bday_2028", "date": "2028-09-27", "title": "Cumpleaños Nacho 2028",   "emoji": "🎂" },
+    { "id": "bday_2029", "date": "2029-09-27", "title": "Cumpleaños Nacho 2029",   "emoji": "🎂" },
+    { "id": "bday_2030", "date": "2030-09-27", "title": "Cumpleaños Nacho 2030",   "emoji": "🎂" },
+    { "id": "nav_2026",  "date": "2026-12-25", "title": "Navidad 2026",            "emoji": "🎄" },
+    { "id": "nav_2027",  "date": "2027-12-25", "title": "Navidad 2027",            "emoji": "🎄" },
+    { "id": "nav_2028",  "date": "2028-12-25", "title": "Navidad 2028",            "emoji": "🎄" },
+    { "id": "rey_2027",  "date": "2027-01-06", "title": "Reyes 2027",              "emoji": "⭐" },
+    { "id": "rey_2028",  "date": "2028-01-06", "title": "Reyes 2028",              "emoji": "⭐" },
+    { "id": "rey_2029",  "date": "2029-01-06", "title": "Reyes 2029",              "emoji": "⭐" }
+  ],
+  "whenever": [
+    { "id": "wp_badday",     "title": "Cuando tengas un mal día",                  "emoji": "🌈" },
+    { "id": "wp_motivation","title": "Cuando necesites motivación",               "emoji": "💪" },
+    { "id": "wp_miss",       "title": "Cuando me eches de menos",                 "emoji": "🌙" },
+    { "id": "wp_wedding",    "title": "El día que nos casemos",                   "emoji": "💍" },
+    { "id": "wp_baby",       "title": "Si la familia crece",               "emoji": "👶" },
+    { "id": "wp_change",     "title": "Cuando cambiemos de trabajo o ciudad",     "emoji": "🌟" },
+    { "id": "wp_doubt",      "title": "En un momento de duda",                    "emoji": "🕯️" },
+    { "id": "wp_love",       "title": "Cuando quieras recordar por qué te amo",   "emoji": "❤️" }
+  ]
+}
