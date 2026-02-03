@@ -18,6 +18,33 @@ var Storage = {
     }
 };
 
+/* ── Password gate ── */
+(function () {
+    var PASS  = 'my3bBuy8RowYSa';
+    var gate  = document.getElementById('passwordGate');
+    var input = document.getElementById('pwInput');
+    var error = document.getElementById('pwError');
+
+    if (localStorage.getItem('<3_unlocked') === '1') {
+        gate.classList.add('hidden');
+        return;
+    }
+
+    input.addEventListener('keydown', function (ev) {
+        if (ev.key !== 'Enter') return;
+        if (input.value === PASS) {
+            localStorage.setItem('<3_unlocked', '1');
+            gate.classList.add('hidden');
+        } else {
+            error.textContent = 'Contraseña incorrecta';
+            error.classList.add('show');
+            input.value = '';
+            input.focus();
+            setTimeout(function () { error.classList.remove('show'); }, 2000);
+        }
+    });
+})();
+
 /* ── Navegación entre secciones ── */
 document.addEventListener('DOMContentLoaded', function () {
     var tabs    = document.querySelectorAll('.nav-tab');
